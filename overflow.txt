@@ -1,0 +1,39 @@
+No contexto do Sass (Syntactically Awesome Stylesheets), overflow: hidden; é uma propriedade CSS comum usada para controlar o comportamento do conteúdo que excede os limites de um elemento. Aqui está uma explicação detalhada do que essa propriedade faz:
+
+Propriedade overflow
+A propriedade overflow em CSS controla o que acontece com o conteúdo que transborda as dimensões definidas de um elemento.
+
+Valores possíveis:
+visible: O conteúdo que excede as dimensões do elemento é visível fora dessas dimensões. É o valor padrão.
+
+hidden: Qualquer conteúdo que exceda as dimensões do elemento é cortado e não é exibido. Isso geralmente resulta em qualquer conteúdo extra sendo "escondido" ou oculto.
+
+scroll: Adiciona barras de rolagem ao elemento, permitindo que o usuário role para ver o conteúdo que excede as dimensões do elemento.
+
+auto: Similar a scroll, mas as barras de rolagem são adicionadas apenas quando necessário, ou seja, quando há conteúdo que excede as dimensões do elemento.
+
+inherit: Herda o valor overflow de seu elemento pai.
+
+Exemplo de Uso em Sass
+Quando você usa overflow: hidden; em Sass, você está aplicando essa propriedade CSS a um seletor específico. Por exemplo:
+
+scss
+Copiar código
+.elemento {
+  overflow: hidden;
+}
+Quando o Sass compila esse código para CSS, ele se torna:
+
+css
+Copiar código
+.elemento {
+  overflow: hidden;
+}
+Significado e Impacto
+Corte de conteúdo: overflow: hidden; é frequentemente usado para garantir que o conteúdo que excede as dimensões de um elemento não seja visível além dessas dimensões. Isso é útil em layouts onde você quer garantir que o conteúdo não "vaze" para fora de áreas designadas, mantendo um visual limpo e controlado.
+
+Impacto visual: Em elementos como contêineres de imagens ou áreas de texto, overflow: hidden; pode ser usado para evitar que imagens maiores ou textos longos se espalhem além dos limites pretendidos, mantendo a integridade do layout.
+
+Considerações: É importante lembrar que overflow: hidden; pode cortar conteúdo de forma abrupta, então deve ser usado com cuidado para garantir que o conteúdo importante não seja inadvertidamente oculto.
+
+Em resumo, overflow: hidden; em Sass (ou em qualquer outro contexto CSS) define que o conteúdo que excede as dimensões do elemento será cortado e não exibido, mantendo assim um layout controlado e limpo.
