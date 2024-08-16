@@ -17,7 +17,7 @@ Clone o Repositório
 
 bash
 Copiar código
-git clone https://github.com/usuario/car-shop.git
+git clone git@github.com:EudesGomes017/Car-Shopping.git
 Navegue até o Diretório do Projeto
 
 bash
